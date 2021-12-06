@@ -1,0 +1,19 @@
+enum Messages {
+    message1,
+    gbao
+}
+motors.largeBC.run(100)
+motors.largeAD.run(100)
+motors.largeC.run(100)
+motors.largeD.run(100)
+brick.showMood(moods.love)
+motors.largeA.setRegulated(true)
+motors.largeA.setInverted(true)
+motors.largeBC.setBrake(true)
+motors.largeAD.setPauseOnRun(true)
+broadcast.sendMessage(Messages.gbao)
+storage.temporary.append("data.txt", "")
+automation.pid1.setGains(0, 0, 0)
+forever(function () {
+	
+})
